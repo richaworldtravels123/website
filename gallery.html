@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+background:#0f0f0f;
+color:white;
+font-family:'Poppins',sans-serif;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:#000;
+border-bottom:1px solid #c6a75e;
+}
+
+header h2{
+color:#c6a75e;
+font-family:'Playfair Display',serif;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+}
+
+nav a:hover{
+color:#c6a75e;
+}
+
+h1{
+text-align:center;
+margin:60px 0 40px;
+font-family:'Playfair Display',serif;
+color:#c6a75e;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:0 60px 80px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+border:1px solid #c6a75e;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#000;
+border-top:1px solid #c6a75e;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Richa World Travels</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="destinations.html">Destinations</a>
+<a href="services.html">Services</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<h1>Travel Gallery</h1>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c">
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
+
+</div>
+
+<footer>
+© 2026 Richa World Travels
+</footer>
+<!-- WhatsApp Button -->
+<a href="https://wa.me/919672999697" class="whatsapp" target="_blank">
+💬
+</a>
+
+<style>
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#c6a75e;
+color:black;
+font-size:22px;
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 4px 15px rgba(0,0,0,0.4);
+transition:0.3s;
+z-index:1000;
+}
+
+.whatsapp:hover{
+background:white;
+color:#c6a75e;
+}
+</style>
+
+</body>
+</html>
