@@ -1,0 +1,10 @@
+
+:root{--gold:#D4AF37;--bg:#0b0b0b;--card:#181818;--text:#f5f5f5}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{position:sticky;top:0;background:#111;padding:16px 5%;display:flex;justify-content:space-between;align-items:center}
+nav a{color:#fff;text-decoration:none;margin:0 10px}
+.hero{min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover}
+.btn{display:inline-block;padding:12px 22px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;border-radius:30px}
+section{padding:60px 5%}footer{padding:30px;text-align:center;background:#111}
+@media(max-width:768px){header{flex-direction:column}nav{display:flex;flex-wrap:wrap;justify-content:center}}
