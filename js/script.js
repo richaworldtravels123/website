@@ -174,3 +174,31 @@ Console Message
 ========================== */
 
 console.log("Richa World Travels Website Loaded Successfully.");
+
+/* ==========================
+Hero Image Slider
+========================== */
+
+const slides = document.querySelectorAll(".slide");
+
+if (slides.length > 0) {
+
+    let currentSlide = 0;
+
+    setInterval(function () {
+
+        slides[currentSlide].classList.remove("active");
+
+        currentSlide++;
+
+        if (currentSlide >= slides.length) {
+
+            currentSlide = 0;
+
+        }
+
+        slides[currentSlide].classList.add("active");
+
+    }, 7000);
+
+}
