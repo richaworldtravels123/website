@@ -550,3 +550,348 @@ TESTIMONIALS
     font-weight:500;
 
 }
+
+
+/*======================================================
+ABOUT PAGE - PART 1
+HERO + STORY SECTION
+======================================================*/
+
+
+/* ================= ABOUT HERO ================= */
+
+
+.about-hero{
+
+    position:relative;
+
+    height:80vh;
+
+    min-height:650px;
+
+    background:url("images/about/hero.jpg") center/cover no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+.about-hero .overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.50);
+
+}
+
+
+.about-hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:#fff;
+
+    max-width:850px;
+
+    padding-top:70px;
+
+}
+
+
+.about-hero-content span{
+
+    display:inline-block;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+    color:#ffffff;
+
+}
+
+
+.about-hero-content h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:64px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+
+.about-hero-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    max-width:800px;
+
+    color:rgba(255,255,255,.92);
+
+}
+
+
+
+/* ================= STORY SECTION ================= */
+
+
+.company-story{
+
+    background:#ffffff;
+
+    padding:100px 0;
+
+}
+
+
+.story-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+
+.story-text .section-tag{
+
+    color:var(--secondary);
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+}
+
+
+
+.story-text h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:48px;
+
+    color:var(--dark);
+
+    line-height:1.25;
+
+    margin:15px 0 30px;
+
+}
+
+
+
+.story-text p{
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    color:var(--text);
+
+    margin-bottom:18px;
+
+}
+
+
+
+.story-image img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+/*======================================================
+MISSION & VISION
+======================================================*/
+
+.mission-vision{
+
+    background:#F8FAFC;
+
+    padding:100px 0;
+
+}
+
+.mission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:50px;
+
+}
+
+.mission-card{
+
+    background:#ffffff;
+
+    padding:45px;
+
+    border-radius:22px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border-top:5px solid var(--secondary);
+
+}
+
+.mission-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.mission-card h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:32px;
+
+    color:var(--dark);
+
+    margin-bottom:20px;
+
+}
+
+.mission-card p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+@media(max-width:768px){
+
+    .mission-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=====================================
+OUR EXPERTISE
+=====================================*/
+
+.strength-section{
+
+    background:#ffffff;
+    padding:100px 0;
+
+}
+
+.strength-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+    margin-top:50px;
+
+}
+
+.strength-card{
+
+    background:#fff;
+    border-radius:22px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    border:1px solid #edf2f7;
+
+}
+
+.strength-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(14,116,144,.15);
+
+}
+
+.strength-icon{
+
+    width:72px;
+    height:72px;
+    margin:0 auto 22px;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+
+}
+
+.strength-card h3{
+
+    font-size:18px;
+    color:var(--dark);
+    line-height:1.5;
+
+}
+
+@media(max-width:992px){
+
+    .strength-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .strength-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
