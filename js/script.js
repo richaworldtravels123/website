@@ -202,3 +202,99 @@ if (slides.length > 0) {
     }, 7000);
 
 }
+
+/* ==========================================
+DESTINATION PAGE
+========================================== */
+
+const destinationData = {
+
+    bali: {
+
+        title: "Bali",
+
+        description: "Bali is Indonesia's most famous island, known for luxury resorts, beautiful beaches, ancient temples, lush rice terraces and vibrant culture. It is one of the world's favourite honeymoon and family holiday destinations.",
+
+        bestTime: "April to October",
+
+        highlights: [
+
+            "Uluwatu Temple",
+
+            "Tanah Lot Temple",
+
+            "Nusa Penida",
+
+            "Tegallalang Rice Terraces",
+
+            "Seminyak Beach"
+
+        ],
+
+        images: [
+
+            "images/attractions/bali1.jpg",
+
+            "images/attractions/bali2.jpg",
+
+            "images/attractions/bali3.jpg",
+
+            "images/attractions/bali4.jpg"
+
+        ]
+
+    }
+
+};
+
+const cards = document.querySelectorAll(".destination-card");
+
+cards.forEach(card => {
+
+    card.addEventListener("click", function(){
+
+        const place = this.dataset.place;
+
+        loadDestination(place);
+
+        cards.forEach(c=>c.classList.remove("active"));
+
+        this.classList.add("active");
+
+    });
+
+});
+
+function loadDestination(place){
+
+    const data = destinationData[place];
+
+    if(!data) return;
+
+    document.getElementById("destinationTitle").textContent = data.title;
+
+    document.getElementById("destinationDescription").textContent = data.description;
+
+    document.getElementById("bestTime").textContent = data.bestTime;
+
+    const list = document.getElementById("highlights");
+
+    list.innerHTML = "";
+
+    data.highlights.forEach(item=>{
+
+        list.innerHTML += `<li>✔ ${item}</li>`;
+
+    });
+
+    document.getElementById("gallery1").src = data.images[0];
+
+    document.getElementById("gallery2").src = data.images[1];
+
+    document.getElementById("gallery3").src = data.images[2];
+
+    document.getElementById("gallery4").src = data.images[3];
+
+}
+
+loadDestination("bali");

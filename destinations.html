@@ -3,15 +3,21 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Destinations | Richa World Travels</title>
+    <title>Destinations | Richa World Travels</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -19,633 +25,175 @@
 
 <header>
 
-<div class="container nav-container">
+    <div class="container nav-container">
 
-<a href="index.html" class="logo">
+        <div class="logo">
 
-<h2>Richa World Travels</h2>
+            <h2>Richa World Travels</h2>
 
-<span>Luxury Travel</span>
+            <span>Luxury Holidays Worldwide</span>
 
-</a>
+        </div>
 
-<nav>
+        <nav>
 
-<ul>
+            <ul>
 
-<li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
 
-<li><a href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
 
-<li><a class="active" href="destinations.html">Destinations</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
 
-<li><a href="packages.html">Packages</a></li>
+                <li><a href="services.html">Services</a></li>
 
-<li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
 
-<li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
-<li><a href="contact.html">Contact</a></li>
+            </ul>
 
-</ul>
+        </nav>
 
-</nav>
-
-<div class="mobile-toggle">
-
-<i class="fas fa-bars"></i>
-
-</div>
-
-</div>
+    </div>
 
 </header>
 
-<section class="page-banner">
-
-<div class="banner-overlay"></div>
-
-<div class="container">
-
-<div class="banner-content">
-
-<h1>Explore Destinations</h1>
-
-<p>
-
-Discover beautiful places around the world with carefully designed holiday packages.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<main>
-
-<section class="destinations">
+<section class="destinations-page">
 
 <div class="container">
 
 <div class="section-title">
 
-<span>POPULAR DESTINATIONS</span>
+<span>EXPLORE THE WORLD</span>
 
-<h2>International Holidays</h2>
+<h2>Popular Destinations</h2>
 
 <p>
-
-Choose your next dream destination.
-
+Discover handpicked destinations carefully selected to create unforgettable holidays and extraordinary travel experiences.
 </p>
 
 </div>
 
 <div class="destination-grid">
 
-<div class="destination-card">
-
-<img src="images/destinations/dubai.jpg" alt="Dubai">
-
-<div class="destination-overlay">
-
-<h3>Dubai</h3>
-
-<p>5 Nights / 6 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
-</div>
-
-</div>
-
-<div class="destination-card">
-
+<div class="destination-card active" data-place="bali">
 <img src="images/destinations/bali.jpg" alt="Bali">
-
 <div class="destination-overlay">
-
 <h3>Bali</h3>
-
-<p>6 Nights / 7 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
+<i class="fa-solid fa-chevron-down"></i>
+</div>
 </div>
 
-</div>
-
-<div class="destination-card">
-
+<div class="destination-card" data-place="maldives">
 <img src="images/destinations/maldives.jpg" alt="Maldives">
-
 <div class="destination-overlay">
-
 <h3>Maldives</h3>
-
-<p>4 Nights / 5 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
+<i class="fa-solid fa-chevron-down"></i>
+</div>
 </div>
 
+<div class="destination-card" data-place="mauritius">
+<img src="images/destinations/mauritius.jpg" alt="Mauritius">
+<div class="destination-overlay">
+<h3>Mauritius</h3>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
 </div>
 
-<div class="destination-card">
+<div class="destination-card" data-place="lakshadweep">
+<img src="images/destinations/lakshadweep.jpg" alt="Lakshadweep">
+<div class="destination-overlay">
+<h3>Lakshadweep</h3>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
+</div>
 
+<div class="destination-card" data-place="dubai">
+<img src="images/destinations/dubai.jpg" alt="Dubai">
+<div class="destination-overlay">
+<h3>Dubai</h3>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
+</div>
+
+<div class="destination-card" data-place="thailand">
 <img src="images/destinations/thailand.jpg" alt="Thailand">
-
 <div class="destination-overlay">
-
 <h3>Thailand</h3>
-
-<p>5 Nights / 6 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
+<i class="fa-solid fa-chevron-down"></i>
+</div>
 </div>
 
-</div>
-
-<div class="destination-card">
-
-<img src="images/destinations/singapore.jpg" alt="Singapore">
-
+<div class="destination-card" data-place="andaman">
+<img src="images/destinations/andaman.jpg" alt="Andaman Islands">
 <div class="destination-overlay">
-
-<h3>Singapore</h3>
-
-<p>4 Nights / 5 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
+<h3>Andaman Islands</h3>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
 </div>
 
-</div>
-
-<div class="destination-card">
-
-<img src="images/destinations/europe.jpg" alt="Europe">
-
-<div class="destination-overlay">
-
-<h3>Europe</h3>
-
-<p>8 Nights / 9 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =========================================================
-DOMESTIC DESTINATIONS
-========================================================== -->
-
-<section class="destinations">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>DOMESTIC DESTINATIONS</span>
-
-<h2>Explore Incredible India</h2>
-
-<p>
-
-Experience the beauty and diversity of India with our specially curated holiday packages.
-
-</p>
-
-</div>
-
-<div class="destination-grid">
-
-<div class="destination-card">
-
+<div class="destination-card" data-place="kashmir">
 <img src="images/destinations/kashmir.jpg" alt="Kashmir">
-
 <div class="destination-overlay">
-
 <h3>Kashmir</h3>
-
-<p>5 Nights / 6 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
+<i class="fa-solid fa-chevron-down"></i>
+</div>
 </div>
 
 </div>
 
-<div class="destination-card">
+<div class="destination-details" id="destinationDetails">
 
-<img src="images/destinations/kerala.jpg" alt="Kerala">
+    <div class="details-left">
 
-<div class="destination-overlay">
+        <h2 id="destinationTitle">
+            Select a Destination
+        </h2>
 
-<h3>Kerala</h3>
+        <h3>Overview</h3>
 
-<p>5 Nights / 6 Days</p>
+        <p id="destinationDescription">
 
-<a href="packages.html" class="btn-primary">
+            Click on any destination above to view complete travel information.
 
-View Packages
+        </p>
 
-</a>
+        <h3>Best Time To Visit</h3>
 
-</div>
+        <p id="bestTime">
 
-</div>
+            --
 
-<div class="destination-card">
+        </p>
 
-<img src="images/destinations/goa.jpg" alt="Goa">
+        <h3>Highlights</h3>
 
-<div class="destination-overlay">
+        <ul id="highlights">
 
-<h3>Goa</h3>
+            <li>Select a destination first.</li>
 
-<p>4 Nights / 5 Days</p>
+        </ul>
 
-<a href="packages.html" class="btn-primary">
+    </div>
 
-View Packages
+    <div class="details-right">
 
-</a>
+        <img id="gallery1" src="images/destinations/bali.jpg" alt="">
 
-</div>
+        <img id="gallery2" src="images/destinations/bali.jpg" alt="">
 
-</div>
+        <img id="gallery3" src="images/destinations/bali.jpg" alt="">
 
-<div class="destination-card">
+        <img id="gallery4" src="images/destinations/bali.jpg" alt="">
 
-<img src="images/destinations/ladakh.jpg" alt="Ladakh">
-
-<div class="destination-overlay">
-
-<h3>Ladakh</h3>
-
-<p>6 Nights / 7 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
-</div>
-
-</div>
-
-<div class="destination-card">
-
-<img src="images/destinations/andaman.jpg" alt="Andaman">
-
-<div class="destination-overlay">
-
-<h3>Andaman</h3>
-
-<p>5 Nights / 6 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
-</div>
-
-</div>
-
-<div class="destination-card">
-
-<img src="images/destinations/rajasthan.jpg" alt="Rajasthan">
-
-<div class="destination-overlay">
-
-<h3>Rajasthan</h3>
-
-<p>6 Nights / 7 Days</p>
-
-<a href="packages.html" class="btn-primary">
-
-View Packages
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </div>
 
 </div>
 
 </section>
-
-<!-- =========================================================
-WHY TRAVEL WITH US
-========================================================== -->
-
-<section class="why-us">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>WHY CHOOSE US</span>
-
-<h2>Travel With Confidence</h2>
-
-<p>
-
-We take care of every detail so you can simply enjoy your journey.
-
-</p>
-
-</div>
-
-<div class="why-grid">
-
-<div class="why-card">
-
-<i class="fas fa-plane-departure"></i>
-
-<h3>Complete Holiday Planning</h3>
-
-<p>
-
-Flights, hotels, sightseeing, transfers and visas arranged under one roof.
-
-</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fas fa-headset"></i>
-
-<h3>Dedicated Support</h3>
-
-<p>
-
-Friendly travel experts available before, during and after your holiday.
-
-</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fas fa-wallet"></i>
-
-<h3>Best Value</h3>
-
-<p>
-
-Competitive pricing without compromising on quality or comfort.
-
-</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fas fa-award"></i>
-
-<h3>Trusted Experience</h3>
-
-<p>
-
-Thousands of satisfied travellers and memorable holidays delivered.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =========================================================
-CALL TO ACTION
-========================================================== -->
-
-<section class="newsletter">
-
-<div class="container newsletter-box">
-
-<div>
-
-<h2>Ready To Explore The World?</h2>
-
-<p>
-
-Let us create the perfect holiday package for you.
-
-</p>
-
-</div>
-
-<div>
-
-<a href="contact.html" class="btn-primary">
-
-Plan My Holiday
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-</main>
-
-<!-- =========================================================
-FOOTER
-========================================================== -->
-
-<footer>
-
-<div class="container footer-grid">
-
-<div>
-
-<h3>Richa World Travels</h3>
-
-<p>
-
-Your trusted travel partner for unforgettable domestic and international holidays.
-
-</p>
-
-<p>
-
-Flights • Hotels • Visa • Cruises • Forex • Travel Insurance
-
-</p>
-
-</div>
-
-<div>
-
-<h4>Quick Links</h4>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="destinations.html">Destinations</a></li>
-
-<li><a href="packages.html">Packages</a></li>
-
-<li><a href="services.html">Services</a></li>
-
-<li><a href="gallery.html">Gallery</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4>Popular Destinations</h4>
-
-<ul>
-
-<li>Dubai</li>
-
-<li>Bali</li>
-
-<li>Maldives</li>
-
-<li>Thailand</li>
-
-<li>Singapore</li>
-
-<li>Europe</li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4>Contact Us</h4>
-
-<p>
-
-<i class="fas fa-phone"></i>
-
-+91-96729-99697
-
-</p>
-
-<p>
-
-<i class="fas fa-envelope"></i>
-
-info@richaworldtravels.in
-
-</p>
-
-<p>
-
-<i class="fas fa-location-dot"></i>
-
-Rajasthan, India
-
-</p>
-
-<div class="social-icons">
-
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-
-<a href="#"><i class="fab fa-instagram"></i></a>
-
-<a href="#"><i class="fab fa-youtube"></i></a>
-
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="copyright">
-
-<p>
-
-© 2026 Richa World Travels. All Rights Reserved.
-
-</p>
-
-</div>
-
-</footer>
-
-<!-- Floating WhatsApp -->
-
-<a href="https://wa.me/919672999697" class="whatsapp">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<!-- Back To Top -->
-
-<button id="topBtn">
-
-<i class="fas fa-arrow-up"></i>
-
-</button>
 
 <script src="js/script.js"></script>
 
